@@ -1,2 +1,13 @@
 # todo-list
-Reminder App - You can set your todo and set reminders as well.
+Add you todo list. 
+
+You can add your todo list into the app set the time for it you will get reminder on the exact time. You can check the list as well as complete mark the list as complete once a task is been completed, delete the task if it is no required, edit it to make changes in the date, time, title etc. 
+
+An other option is the calendar and you can have an overview of all the task in a concise view.
+
+
+Tech Stack 
+- Room Database 
+- ButterKnife
+- MVC design pattern 
+- Material Design
