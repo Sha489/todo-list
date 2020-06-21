@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="20dp"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:paddingLeft="20dp"
+    tools:context=".activity.MainActivity">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Hello"
+       android:layout_marginTop="20dp"
+       android:textColor="@color/colorAccent"
+       android:textSize="18sp"/>
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="All tasks"
+       fontPath="fonts/nunito_extra_bold.ttf"
+       android:textStyle="bold"
+       android:textColor="@color/colorAccent"
+       android:textSize="28sp"
+       tools:ignore="MissingPrefix" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right|center"
+            android:background="@drawable/calendar"
+            android:id="@+id/calendar"/>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:id="@+id/noDataImage"
+                android:layout_gravity="center"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/taskRecycler"/>
+
+        </FrameLayout>
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="70dp"
+       android:text="Add Task"
+       android:drawablePadding="10dp"
+       android:paddingTop="10dp"
+       android:id="@+id/addTask"
+       android:layout_gravity="center"
+       android:textColor="@color/colorAccent"
+       android:textSize="20sp"
+       android:drawableLeft="@drawable/ic_add_black_24dp"
+       android:textAlignment="center"
+       android:layout_weight="0.5"
+       android:layout_marginBottom="20dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
