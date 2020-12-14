@@ -7,9 +7,16 @@ An other option is the calendar and you can have an overview of all the task in 
 
 
 Tech Stack 
+<<<<<<< HEAD
 - Androidx
 - Calligraphy for fonts
 - Butterknife for binding the ids
 - Room database
 - Glide
 - Calendar View
+=======
+- Room Database 
+- ButterKnife
+- MVC design pattern 
+- Material Design
+>>>>>>> 586c6e819eaa119c2e0ae7b25d0bfcdf04794a87

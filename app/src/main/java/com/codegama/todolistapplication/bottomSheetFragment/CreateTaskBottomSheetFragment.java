@@ -107,7 +107,6 @@ public class CreateTaskBottomSheetFragment extends BottomSheetDialogFragment {
         unbinder = ButterKnife.bind(this, contentView);
         dialog.setContentView(contentView);
         alarmManager = (AlarmManager) getActivity().getSystemService(ALARM_SERVICE);
-
         addTask.setOnClickListener(view -> {
             if(validateFields())
             createTask();

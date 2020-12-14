@@ -11,7 +11,6 @@ import java.util.Locale;
 
 import io.github.inflationx.viewpump.ViewPumpContextWrapper;
 
-
 public class BaseActivity extends AppCompatActivity {
 
     @Override
